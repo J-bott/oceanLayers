@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanLayers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- <script src="sketch.js"></script>    
+    <script src="grid.js"></script>     -->
+    <script src="script.js"></script>    
+</head>
+<body>
+    <!-- <div class="load">
+        <h1 class="load-text01 type01">Heaven is up</h1>
+        <h1 class="load-text02 type01">Hell is down</h1>
+    </div> -->
+    <div class="final-video-container">
+        <video id="final-video" src="src/animation/videofinal.mp4"></video>
+    </div>
+
+    <!-- BURGERMENU -->
+    <div id="burgermenu" class="burgermenu">
+        
+        <ul class="burgermenu-menu">
+            <a href="about.html" class="type03 type-size02">About</a>
+            <a href="credits.html" class="type03 type-size02">Credits</a>
+            <a class="type03 type-size02">Contact us</a>
+        </ul>
+        
+    </div>
+    <nav>
+        <a href="#" id="logo-nav" class="logo-nav type02">
+            <img src="src/imgs/logonav.png" alt="">
+        </a>
+        <div class="atm">
+            <p class="text-white type01">
+                <span id="atm">0000</span>
+                ATM
+            </p>
+            
+            
+        </div>
+        <button id="sound-control">
+            <img class="sound-gif"  id="sound-gif" src="src/animation/sound-wave.gif" alt="">
+        </button>
+        <button id="burger">
+            <img src="src/imgs/burgerMenu2.svg" alt="">
+        </button>
+    </nav>
+    
+    <div class="barometer">
+        <div class="indicator"></div>
+    </div>
+    <div class="supra-container">
+        <div class="main-container text-white">
+            
+            <!-- SURFACE -->
+            
+            <div class="container-zone0 surface">
+                <button id="dive">
+                    <h1 class="type02">DIVE</h1>
+                </button>
+                <img class="header-title" src="src/imgs/logonav.png" alt="">
+                
+                <audio id="background-audio" loop src="src/sound/ambient.mp3"></audio>
+                
+                <p class="header-body text-white type01 type-size01">The ocean cover 70% of Earth's surface. Yet 95% of it remains unknown. Dive in and explore the deepest parts of the ocean divided in it's <b>5 zones.</b></p>
+                <div class="wave-container">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+
+            <!-- EPIPELAGICO -->
+            <div class="container-zone01 epipelagic ">
+                <article class="zone-info">
+                    <h1 class="zone-title type-size04 type02" >Epipelagic Zone</h1>
+                    <p class="text-white type01 type-size03">0 - 200 meters from sea level</p>
+                        <p class="info-bodytext type01 type-size03 text-white">The "Sunlight Zone". It's characterized by the sunlight that reaches this zone, allowing the presence of beings capable of photosynthesis. About 90% of marine life resides here, . This zone plays a crucial role in supporting oceanic biodiversity.</p>
+                </article>
+
+                <article class="zone-subinfo margin-bottom50">
+                    <h1 class="article-title type-size04 type03">Plankton</h1>
+                    <img class="article-img" src="src/imgs/zooplankton.jpg" alt="">
+                    <p class="info-bodytext type01 type-size03 text-white">Plankton refers to tiny organisms that float in ocean currents, encompassing both plant-like phytoplankton and animal-like zooplankton. Phytoplankton, such as algae, are essential as they generate oxygen, serve as the foundation of marine food chains, and help regulate global climate by absorbing carbon dioxide. Zooplankton, including small animals like krill, provide food for larger marine creatures, supporting biodiversity from small fish to whales. Plankton's role in marine ecosystems is critical for biodiversity maintenance, environmental health monitoring, and understanding climate impacts on oceans.</p>
+                </article>
+                
+                <article class="zone-subinfo article-right">
+                    <h1 class="article-title type-size04 type03 ">Light Penetration</h1>
+                    <p class="info-bodytext type01 type-size03 text-white">The epipelagic zone tends to extend through a shorter distance in coastal waters where the water turbulence stops the penetration of light. It’s also relevant that different wavelengths of light have different penetration. So some colors, like red, are absent sooner than others. </p>
+                </article>
+
+            </div>
+            <!-- MESOPELAGICO -->
+            <div class="container-zone01 mesopelagic border-top">
+                <article class="zone-info margin-bottom50">
+                <h1 class="zone-title type-size04">Mesopelagic</h1>
+                <p class="text-white type01 type-size03">200 - 1000 meters</p>
+                    <p class="info-bodytext type01 type-size03 text-white">At this point sunlight is so scarce that the process of photosynthesis is not possible, which gives this zone the name “twilight zone”. The biodiversity of this location is largely sustained by particles that fall from the epipelagic zone. This zone is adjacent to the continental slope.</p>
+                </article>
+                
+                <article class="zone-subinfo">
+                    <h1 class="article-title type-size04 type02 type-size04 ">Deepest scuba dive</h1>
+                    <p class="text-white type01 type-size03">332.35 meters</p>
+                    <p class="info-bodytext type01 type-size03 text-white">The world record was set by Ahmed Gabr in Dahab in the Red Sea on 18/19 September 2014. His descent took only 15 minutes while the ascent, to avoid the side effects of abrupt pressure change in the human body known as “decompression sickness”, lasted 13 hours 35 minutes.</p>
+                </article>
+            </div>
+            <!-- BATHYPELAGICO -->
+            <div class="container-zone01 bathypelagic border-top">
+                <article class="zone-info margin-bottom50">
+                <h1 class="zone-title type-size04">Bathypelagic</h1>
+                <p class="text-white type01 type-size03">1000 - 4000 meters from sea level</p>
+
+                    <p class="info-bodytext type01 type-size03 text-white">Also known as the "midnight zone” as no sunlight reaches this location. This zone is home for the continental rise. A steep inclination built by fallen materials that compose a structure similar to a slide.</p>
+                </article>
+                
+                <article class="zone-subinfo margin-bottom50">
+                    <h1 class="article-title type-size04 type02"type-size04 >Titan</h1>
+                    <img class="article-img" src="src/imgs/titan.jpg" alt="">
+                    <p class="info-bodytext type01 type-size03 text-white">A submarine transporting 5 passengers with the goal of visiting the Titanic wreckage (3789m) fatally imploded. The pressure outside of the submarine was so great that it’s calculated that the implosion of the submarine happened at one millisecond at a speed of 2414 km/h.</p>
+                </article>
+            </div>
+            
+            <!-- ABISSOPELAGICO -->
+            <div class="container-zone01 abissopelagic border-top">
+                <article class="zone-info margin-bottom50">
+                <h1 class="zone-title type-size04">Abyssopelagic</h1>
+                <p class="text-white type01 type-size03">4000 - 6000 meters from sea level</p>
+                    <p class="info-bodytext type01 type-size03 text-white">The abyss zone is the largest in area. It covers 83% of the ocean which is 60% of Earth’s surface. Its topology consists of flat plains being also the flattest landforms on Earth. This is also considered the ocean floor</p>
+                </article>
+
+                <article class="zone-subinfo margin-bottom50">
+                    <h1 class="article-title type-size04 type02"type-size04 >Giant squid</h1>
+                    <img class="article-img" src="src/imgs/giantsquid.jpg" alt="">
+                    <p class="info-bodytext type01 type-size03 text-white">Also known as the "Sunlight Zone," extends from the ocean surface down to 200 meters. It's characterized by Sunlight Penetration sunlight reaches this zone, allowing the presence of beings capable of photosynthesis. About 90% of marine life resides here, forming the base of aquatic ecosystems. This zone plays a crucial role in supporting oceanic biodiversity.</p>
+                </article>
+            </div>
+            <!-- HADOPELAGICO -->
+            <div class="container-zone01 hadopelagic border-top">
+                <article class="zone-info margin-bottom50">
+                <h1 class="zone-title type-size04">Hadopelagic</h1>
+                <p class="info-bodytext type01 type-size03 text-white">The Hadalpelagic (name derived from the word “Hades”) is not as commonly found as the other zones. This zone is created by activities of tectonic plates that form great depressions on the ocean floor that are known as trenches. Between all the trenches known to man, the Mariana trench, close to the Mariana islands is the deepest one.</p>
+                </article>
+
+                <article class="zone-subinfo margin-bottom50">
+                    <h1 class="article-title type-size04 type02"type-size04 >Amphipod</h1>
+                    <img class="article-img" src="src/imgs/amphipod.jpg" alt="">
+                    <p class="info-bodytext type01 type-size03 text-white">Amphipods are small, shrimp-like crustaceans that thrive in the hadopelagic zone. These resilient creatures are highly adaptable, capable of withstanding extreme pressures and cold temperatures. Amphipods play a crucial role in the hadopelagic ecosystem by participating in the decomposition process, breaking down organic matter that sinks to the ocean floor. Their presence helps recycle nutrients and supports the deep-sea food web, making them integral to the health and sustainability of these remote and inhospitable marine environments.</p>
+                </article>
+                
+            </div>
+            <!-- CHALLENGER DEEP -->
+            <div class="container-zone01 challenger border-top">
+                <h1 class="zone-title type-size04">Challenger deep</h1>
+                <p class="text-white type01 type-size03">10935 meters from sea level</p>
+                <button class="video-button">
+                    <h1 class="type02 type-size04 text-white">Play</h1>
+                </button>
+<!-- 
+                <article class="info01">
+                    <video controls src="src/animation/WhatsApp Video 2024-06-16 at 15.30.10.mp4"></video>
+                    
+                </article> -->
+            </div>
+
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
